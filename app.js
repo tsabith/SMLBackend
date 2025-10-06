@@ -35,7 +35,7 @@ syncDatabase();
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/servers', require('./routes/servers'));
-// app.use('/api/projects', require('./routes/projects'));
+app.use('/api/projects', require('./routes/projects'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
